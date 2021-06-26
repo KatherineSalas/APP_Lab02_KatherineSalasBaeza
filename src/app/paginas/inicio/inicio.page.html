@@ -1,12 +1,37 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>inicio</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<app-header titulo= "Inicio"></app-header>
 <ion-content>
-<ion-button routerLink="/r-usuarios">Registrar Usuarios</ion-button>
-<ion-button routerLink="/r-usuarios">Listar Usuarios</ion-button>
-<ion-button routerLink="/r-Egresos">Registrar Egresos</ion-button>
-<ion-button routerLink="/r-usuarios">Listar Usuarios</ion-button>
+<ion-list>
+  <!--<ion-item
+   *ngFor="let componente of Componente"
+    [routerLink]="coponente.direccion"
+  > 
+    <ion-icon [name]="componente.icono" slot="start"></ion-icon>
+    {{componente.nombre}}> -->
+
+    <ion-list>
+      <ion-item routerLink="/r-usuarios">
+            <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+        Registar Ususarios
+      </ion-item>
+      <ion-item routerLink="/l-usuarios">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      Listar Ususarios
+      </ion-item>
+      <ion-item routerLink="/r-egresos">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      Registar Egresos
+      </ion-item>
+      <ion-item routerLink="/l-egresos">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      Listar Egresos
+      </ion-item>
+  
+    </ion-list>
+
+</ion-list>
+
+<!-- <ion-button routerLink="/r-usuarios">Registrar Usuarios</ion-button>
+<ion-button routerLink="/l-usuarios">Listar Usuarios</ion-button>
+<ion-button routerLink="/r-egresos">Registrar Egresos</ion-button>
+<ion-button routerLink="/l-egresos">Listar Egresos</ion-button> -->
 </ion-content>
